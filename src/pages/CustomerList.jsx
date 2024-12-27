@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Search } from "lucide-react";
 
 export default function CustomerList() {
   const [showModal, setShowModal] = useState(false);
@@ -14,10 +15,12 @@ export default function CustomerList() {
         Here is the list of all customers.
       </p>
 
-  
       <div className="mt-4 flex items-center justify-between">
-        <input className="p-3 w-1/2 border border-gray-300 rounded-md" placeholder="Search Customer..."/>
-        
+        <div className="flex flex-row-reverse justify-between gap-2 p-3 w-1/2 border border-gray-300 rounded-md">
+        <Search classname= "absoulte left-3 top-1/2"/>
+        <input className="" placeholder="Search Customer..."/>
+        </div>
+
         <button className="text-white bg-gray-700 p-3 w-1/4 rounded-md hover:bg-neutral-950 ml-4" onClick={toggleModal}> + Add Customer </button>
       </div>
 
@@ -56,20 +59,4 @@ export default function CustomerList() {
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
