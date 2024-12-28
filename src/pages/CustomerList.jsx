@@ -18,7 +18,7 @@ export default function CustomerList() {
       <div className="mt-4 flex items-center justify-between">
         <div className="flex flex-row-reverse justify-between gap-2 p-3 w-1/2 border border-gray-300 rounded-md">
         <Search classname= "absoulte left-3 top-1/2"/>
-        <input className="" placeholder="Search Customer..."/>
+        <input className="focus:outline-none" placeholder="Search Customer..."/>
         </div>
 
         <button className="text-white bg-gray-700 p-3 w-1/4 rounded-md hover:bg-neutral-950 ml-4" onClick={toggleModal}> + Add Customer </button>
